@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<title>Restaurant Profile</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<link rel="stylesheet" href="styles/Rprofile.css" type="text/css">
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="scripts/Restaurant_profile.js"></script>
+
+
+<body onload="getProfile(); getMenu();">
+
+
+<!-- Header with image -->
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+  <div class= "Container">
+    <img src="images/coverpic.jpg" id="coverpic">
+    <div class="mainheading">
+      <p id="name">Restaurant name</p>
+    </div>
+  </div>
+  
+  <div class="w3-display-bottomright w3-center w3-padding-large">
+  </div>
+</header>
+
+<!-- Add a background color and large text to the whole page -->
+<div class="w3-sand w3-grayscale w3-large">
+
+<!-- About Container -->
+<div class="w3-container" id="about">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide" style="font-size:40px">ABOUT US</span></h5>
+
+    <p class="headings" style="font-size:28px"><strong>Description:</strong></p>
+    <p class="text" id="description">......</p>
+
+    <p class="headings" style="font-size: 28px"><strong>Type (Dine-in/Delivery/Both):</strong></p>
+      <p class="text" id="type"></p> 
+
+    <p class="headings" style="font-size:28px"><strong>Address:</strong></p>
+      <p class="text" id="address"></p> 
+
+    <p class="headings" style="font-size:28px"><strong>Contact Number:</strong></p> 
+      <p class="text" id="number"></p> 
+
+    <p  class="headings" style="font-size:28px"><strong>Cuisine:</strong> </p>
+      <p class="text" id="cuisine"></p> 
+
+    <p class="headings" style="font-size:28px"><strong>Website:</strong> <a  href="" id="website" target="_blank">click here</a> </p>
+  </div>
+</div>
+
+<!-- Menu Container -->
+<div class="button_container">
+  <a class="button2" id="menu">View Menu</a>
+</div>
+
+
+<!-- End page content -->
+</div>
+
+<div class="button">
+  <a class="button1" id="feedback">Rate and comment</a>
+</div>
+<div class="button">
+  <a class="button1" id="viewComments">View Comments</a>
+</div>
+  
+
+
+
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+}
+document.getElementById("myLink").click();
+</script>
+
+
+<script src="scripts/Rprofile.js"></script>
+
+</body>
+</html>

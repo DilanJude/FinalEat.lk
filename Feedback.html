@@ -1,0 +1,50 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback</title>
+    <link rel="stylesheet" type="text/css" href="styles/Feedback.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="scripts/Rprofile.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+  
+</head>
+<body>
+    <div class="form_wrapper">
+        <div class="form_container">
+          <div class="title_container">
+            <h2>Please submit your feedback</h2>
+          </div>
+          <div class="row clearfix">
+            <div class="">
+  
+              <div class="input_field">
+                <input type="text" name="customerName" placeholder="Enter your name" required id="customerName">
+              </div>
+  
+              <div class="input_field select_option">
+                <select id="rating" required>
+                  <option>Enter your rating</option>  
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                </select>
+              </div>
+  
+              <div class="input_field">
+                <textarea rows="7" cols="20" name="comment" id="comment" placeholder="Enter your comments"></textarea>
+              </div>
+            </div>
+            <input class="button" type="button" value="Submit Feedback" onclick="submitfeedback()">
+          </div>
+        </div>
+      </div>
+  
+</body>
+</html>

@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>                                                 <!-- Start of Head Section -->
+  <title>Restaurents</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="styles/RestaurantsStyle.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+</head>                                                   <!-- End of Head Section -->
+<body onload="preference()">                                                    <!-- Body of the Page-->
+  <nav>                  <!-- Navigation-->
+    <div class="logo">
+       EAT.LK
+    </div>
+    <input type="checkbox" id="click">
+    <label for="click" class="menu-btn">
+    <i class="fas fa-bars"></i>
+    </label>
+    <ul>
+       <li><a href="Landing_page.html">Home</a></li>
+       <li><a class="active" href="Restaurants.html">Restaurants</a></li>
+       <li><a href="Contact_us.html">Contact Us</a></li>
+    </ul>
+ </nav>               <!-- end of navigation -->
+
+    <div class="heading-homepage">                           <!-- Heading of Web Page-->
+      <header>
+        <h1 class="main">Eat.lk</h1>
+        <p class="mainpara">Food & Restaurents Online</p>
+     </header>
+    </div>                                                    <!-- End of Heading -->
+
+
+
+
+    <section id="testimonials">
+      <!--Profile container------>
+      <div class="testimonial-box-container">
+  
+          <!--Profile box------->
+          <div class="testimonial-box">
+              <!--box top----->
+              <div class="box-top">
+  
+                  <!--Profile section-->
+                  <div class="profile">
+                      <!--img-->
+                      <div class="profile-img">
+                          <img src="images/manu1.png">
+                      </div>
+                  </div>
+                      <!--name-->
+                      <div class="name-restaurant">
+                          <strong id="RestaurantName">KFC</strong>
+                      </div>
+              </div>
+  
+              <div class="information">
+                  <p class="heading">Address</p>
+                  <p class="subheading" id="description">123 Main Street</p>
+  
+                  <p class="heading">Number</p>
+                  <p class="subheading" id="">123456789</p>
+  
+                  <p class="heading">Website</p>
+                  <p class="subheading" id="">wwww.KFC.lk</p>
+  
+                  <p class="heading">Rating</p>
+                  <p class="subheading">0/5</p>
+              </div>
+          </div>
+  
+  
+  
+                  <!--Profile box------->
+                  <div class="testimonial-box">
+                      <!--box top----->
+                      <div class="box-top">
+          
+                          <!--Profile section-->
+                          <div class="profile">
+                              <!--img-->
+                              <div class="profile-img">
+                                  <img src="images/manu2.png">
+                              </div>
+                          </div>
+                              <!--name-->
+                              <div class="name-restaurant">
+                                  <strong id="RestaurantName">Pizza Hut</strong>
+                              </div>
+                      </div>
+          
+                      <div class="information">
+                          <p class="heading">Address</p>
+                          <p class="subheading" id="description">1234 Sub Street</p>
+          
+                          <p class="heading">Number</p>
+                          <p class="subheading" id="">0112729729</p>
+          
+                          <p class="heading">Website</p>
+                          <p class="subheading" id="">www.pizzahut.lk</p>
+          
+                          <p class="heading">Rating</p>
+                          <p class="subheading">4/5</p>
+                      </div>
+                  </div>
+  
+                  
+  
+  
+                          <!--Profile box------->
+          <div class="testimonial-box">
+              <!--box top----->
+              <div class="box-top">
+  
+                  <!--Profile section-->
+                  <div class="profile">
+                      <!--img-->
+                      <div class="profile-img">
+                          <img src="images/manu3.jpg">
+                      </div>
+                  </div>
+                      <!--name-->
+                      <div class="name-restaurant">
+                          <strong id="RestaurantName">Casablanca</strong>
+                      </div>
+              </div>
+  
+              <div class="information">
+                  <p class="heading">Address</p>
+                  <p class="subheading" id="description">123 Main Street</p>
+  
+                  <p class="heading">Number</p>
+                  <p class="subheading" id="">123456789</p>
+  
+                  <p class="heading">Website</p>
+                  <p class="subheading" id="">www.facebook.com/casablancakottawarest</p>
+  
+                  <p class="heading">Rating</p>
+                  <p class="subheading">0/5</p>
+              </div>
+          </div>
+  
+  
+  
+                  <!--Profile box------->
+                  <div id="health" class="testimonial-box-health">
+                      <!--box top----->
+                      <div class="box-top">
+          
+                          <!--Profile section-->
+                          <div class="profile">
+                              <!--img-->
+                              <div class="profile-img">
+                                  <img src="images/feature4.jpg">
+                              </div>
+                          </div>
+                              <!--name-->
+                              <div class="name-restaurant">
+                                  <strong id="RestaurantName">The Health House</strong>
+                              </div>
+                      </div>
+          
+                      <div class="information">
+                          <p class="heading">Featured Healthy Restaurant</p>
+                          <p class="heading">Address</p>
+                          <p class="subheading" id="description">123 Main Street</p>
+          
+                          <p class="heading">Number</p>
+                          <p class="subheading" id="">123456789</p>
+          
+                          <p class="heading">Website</p>
+                          <p class="subheading" id="">wwww.pizzahut.lk</p>
+          
+                          <p class="heading">Rating</p>
+                          <p class="subheading">0/5</p>
+                      </div>
+                  </div>
+          
+  
+      
+      </div>
+  
+      
+      
+  
+      </section>
+
+
+
+
+
+
+
+<!-- Veiw and sort prompts-->
+<div class="itemcontainer">
+  <div class="block"><p id="text">Not what your looking for? Check out our full list of restaurants</p></div>
+  <div class="flexbox">
+
+  <a class="button1" id="btn" href="#">View full list</a>
+    <a class="button1" href="Sort.html">Sort restaurants</a>
+
+  </div>
+</div>
+<!-- end of prompts -->
+
+<!-- Restaurant list modal -->
+<div id="myModal" class="Modal">
+  <div class="modalcontent">
+    <span class="close">&times;</span>
+
+    <input type="text" id="search" onkeyup="search()" placeholder="Search for restaurants">
+    <ul id="R_List">
+
+      
+    </ul>
+  </div>
+</div>
+<!---->
+
+
+
+<footer class="footer">                                      <!-- Footer of Page--> 
+  <br>
+  <p>Eat.lk 2021 © All Right Reserved. Designed by Group 3<br>
+  <a href="https://www.w3schools.com/">For More Info</a></p>
+  <br>
+</footer> 
+<script src="scripts/Restaurants.js"></script>
+</body>
+</html>

@@ -1,0 +1,308 @@
+
+  * {box-sizing: border-box;}
+/*nav bar*/
+  
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Raleway', sans-serif;
+} 
+nav{
+  display: flex;
+  height: 80px;
+  width: 100%;
+  background: #162328;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 50px 0 100px;
+  flex-wrap: wrap;
+}
+nav .logo{
+  color: #fff;
+  font-size: 35px;
+  font-weight: 600;
+  font-family: 'Raleway', sans-serif;
+}
+nav ul{
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+nav ul li{
+  margin: 0 5px;
+}
+nav ul li a{
+  color: #f2f2f2;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 500;
+  padding: 8px 15px;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+nav ul li a.active,
+nav ul li a:hover{
+  color: rgb(255, 255, 255);
+  background: #358d4b;
+}
+nav .menu-btn i{
+  color: #fff;
+  font-size: 22px;
+  cursor: pointer;
+  display: none;
+}
+input[type="checkbox"]{
+  display: none;
+}
+@media (max-width: 1000px){
+  nav{
+    padding: 0 40px 0 50px;
+  }
+}
+@media (max-width: 920px) {
+  nav .menu-btn i{
+    display: block;
+  }
+  #click:checked ~ .menu-btn i:before{
+    content: "\f00d";
+  }
+  nav ul{
+    position: fixed;
+    top: 80px;
+    left: -100%;
+    background: #111;
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    display: block;
+    transition: all 0.3s ease;
+  }
+  #click:checked ~ ul{
+    left: 0;
+  }
+  nav ul li{
+    width: 100%;
+    margin: 40px 0;
+  }
+  nav ul li a{
+    width: 100%;
+    margin-left: -100%;
+    display: block;
+    font-size: 20px;
+    transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  #click:checked ~ ul li a{
+    margin-left: 0px;
+  }
+  nav ul li a.active,
+  nav ul li a:hover{
+    background: none;
+    color: cyan;
+  }
+}
+.content{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: -1;
+  width: 100%;
+  padding: 0 30px;
+  color: #1b1b1b;
+}
+.content div{
+  font-size: 40px;
+  font-weight: 700;
+}
+
+/* end of nav bar */
+
+
+/* Font & and Body Color */
+  body {
+    margin: 0;
+    background-color:#ffffff;
+    color:black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+/* End of Font & Body Color */
+
+
+/* Heading*/
+  .heading-homepage {
+        display: block;
+        text-align: center;
+        padding: 20px;
+        color :rgb(8, 8, 8);
+        font-size: 22px;
+        font-family: 'Raleway', sans-serif;
+}
+  h1.main{
+    color:#000000;
+  }
+  p.mainpara{
+    color:#000000;
+  }
+
+/* Heading End */  
+
+/*Responsive Image */
+.mainlogo {
+  width: 100%;
+  max-width: width auto;
+  height: auto;
+}
+/* Subsections Styling */
+.image1 {
+  position: relative;
+  background-attachment: fixed;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  max-width: width auto;
+  height:auto;
+  opacity: 0.80;
+}
+.image1 {                                  /*Styling the images */
+  background-image: url("images/homemain1.png");
+  min-height: 1280px;
+}
+
+                                           /*Image styling end */
+
+/* Login Button Section*/
+h2.types{
+  color: rgb(255, 255, 255);
+  text-align: center;
+  font-size: large;
+}
+
+#teasquares {
+  display:flex;
+  flex-flow:row wrap;
+  justify-content : space-around;
+  margin-bottom: 100px;
+  margin-top: 30px;
+  padding: 0px 100px 0px 100px;
+}
+#teasquares .box {
+  margin: .8em .2em ;
+  width: 325px;
+  height: 400px;
+  box-sizing : border-box;
+  box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba (0,0,0,0.22);
+  background-color : #ffffff;
+  color: rgb(0, 0, 0);
+
+}
+.box2 {
+  height: 300px;
+  width: 300px;
+}
+.box img{
+  width: 100%;
+  height: 300px;
+}
+#teasquares h3, #teasquares p{
+  width:90%;
+  padding :0;
+}
+.button {
+  padding:.8em;
+  background-color :#358d4b;
+  color: rgb(17,17,17);
+  text-transform:uppercase;
+  text-decoration: none;
+  display:block;
+  margin: .8em auto .8em 0;
+  width:100px;
+  margin-left: 100px;
+}
+img{
+  width:500;
+  height:auto;
+  display:block;
+  padding:0;
+  margin:0 auto;
+}
+/*Login button section styling end */ 
+                                           
+.text {
+  position: absolute;
+  left: 0;
+  top: 20%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
+h2,h3 {
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  font: 20px "Lato", sans-serif;
+  color: #111;
+}
+h3.paras{
+  text-align:center;
+  font-size: 30px;
+}
+h2.paras{
+  text-align:center;
+}
+.paras1 {
+  color:rgb(255, 255, 255);
+  background-color:#000000;
+  padding:20px 40px;
+  text-align: justify;
+  font: 20px "Lato", sans-serif;
+}
+.paras3 {
+  color:black;
+  background-color:#ffffff;
+  padding:20px 40px;
+  text-align: center;
+  font: 20px "Lato", sans-serif;
+}
+.paras {
+   color:black;
+   background-color:#ffffff;
+   text-align:center;
+   text-align: justify;
+   font: 20px "Lato", sans-serif;
+}
+ul{
+  list-style:square;
+}
+section.border{
+  border:10px solid #000000;
+  margin:10px;
+  padding:5px;
+}
+
+@media only screen and (max-device-width: 1024px) {
+  .image2, .image3, .image4 {
+    background-attachment:scroll;
+  }
+}
+
+/* End of Subsections Styling */
+/*Footer */
+.footer {
+  text-align: center;
+  padding: 3px;
+  background-color:#162328;
+  color: rgb(255, 255, 255);  
+  position: absolute;
+  bottom: 100;
+  width: 100%;
+}
+.footer a{
+  color: #fff;
+}
+/* End of Footer */
+
+

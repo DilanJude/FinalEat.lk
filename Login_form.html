@@ -1,0 +1,32 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="styles/LoginStyle.css" type="text/css">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="scripts/Login.js"></script>
+</head>
+<body>
+    <div class="form_wrapper">
+        <div class="form_container">
+            <div class="title_container">
+                <h2>Please login for a food-tastic time!</h2>
+            </div>
+
+            <div class="">
+                <div class="input_field">
+                    <input type="email" name="email" placeholder="Email" required id="email"/>
+                </div>
+                <div class="input_field">
+                    <input type="password" name="password" placeholder="password" required id="password"/>
+                </div>
+
+            </div>
+            <input class="button" type="button" value="Login" onclick="login()"/>
+        </div>
+    </div>
+</body>
+</html>

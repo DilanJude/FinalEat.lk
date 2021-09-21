@@ -1,0 +1,70 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="styles/RestaurantProfileCreateStyle.css" type="text/css">
+    <title>Create Profile</title>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src= "scripts/Restaurant_profile.js"></script>
+</head>
+<body>
+
+
+    <div class="form_wrapper">
+        <div class="form_container">
+
+            <div class="title_container">
+                <h2>Create your Profile!</h2>
+            </div>
+
+            <div class="row clearfix">
+                <div class="">
+
+                    <div class="input_field">
+                        <input type="text" name="name" placeholder="Restaurant Name" required id="name">
+                    </div>
+
+                    <div class="input_field">
+                        <input type="email" name="email" placeholder="Enter email used to register" required id="email">
+                    </div>
+
+                    <div class="input_field">
+                        <input type="text" name="address" placeholder="Address" required id="address">
+                    </div>
+
+                    <div class="input_field">
+                        <textarea rows="7" cols="70" name="description" id="description" placeholder="Describe your restaurant"></textarea>
+                    </div>
+
+                    <div class="input_field">
+                        <input type="text" name="cuisine" placeholder="Cuisine" id="cuisine">
+                    </div>
+                    
+                    <div class="input_field select_option">
+                        <select id="type" required>
+                            <option>Select type</option>
+                            <option>Dine-In</option>
+                            <option>Delivery</option>
+                            <option>Both</option>
+                        </select>
+                    </div>
+                    
+                    <div class="input_field">
+                        <input type="text" name="contactinfo" placeholder="Enter contact number" required id="contactno">
+                    </div>
+
+                    <div class="input_field">
+                        <input type="url" name="website" placeholder="Website link" required id="website"> 
+                    </div>
+
+                </div>
+                <input class="button" type="button" value="Create Profile" onclick="CreateProfile()">
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

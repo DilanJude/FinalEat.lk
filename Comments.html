@@ -1,0 +1,55 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comments</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link rel="stylesheet" href="styles/Comments.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+  
+  
+</head>
+
+<body onload="loadComments()">
+      
+    <!--Comments------------------------------->
+    <section id="testimonials">
+
+        <!--Headings----------------->
+        <div class="testimonial-heading">
+            <span>Comments</span>
+            <h1>Here's what our users had to say</h1>
+        </div>
+
+        <div class="button">
+            <a class="button1" id="positive">View Positive</a>
+          </div>
+          <div class="button">
+            <a class="button1" id="negative">View Negative</a>
+          </div>
+            
+
+        <!--comment-box-container------------------>
+        <div id="comments" class="testimonial-box-container"></div>
+
+    </section>
+
+    <div class="reset">
+    <a class="button1" id="reset">View all</a>
+    </div>
+    
+    <script src="scripts/comments.js"></script>
+</body>
+
+</html>

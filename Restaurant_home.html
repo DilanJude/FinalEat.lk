@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>                                                 <!-- Start of Head Section -->
+  <title>Home</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="styles/RestaurantHomeStyle.css">
+    <meta name="viewport" content="width=device-width, initial-scale=auto">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+ <!--Favicon-->
+<!--Favicon end-->
+   
+</head>                                                   <!-- End of Head Section -->
+<body onload="greeting()">
+  <nav>                  <!-- Navigation-->
+    <div class="logo">
+       EAT.LK
+    </div>
+    <input type="checkbox" id="click">
+    <label for="click" class="menu-btn">
+    <i class="fas fa-bars"></i>
+    </label>
+    <ul>
+       <li><a href="Landing_page.html">Home</a></li>
+       <li><a href="Restaurants.html">Restaurants</a></li>
+       <li><a href="Contact_us.html">Contact Us</a></li>
+    </ul>
+ </nav>               <!-- end of navigation -->
+
+<div class="greeting">
+  <img src="images/background.png" width="1500" height="1000" alt="logo" class="mainlogo">
+  <div class="caption">
+    <p>Welcome</p>
+    <p id="UserName">Restaurant</p>
+  </div>
+</div>
+
+  <div class="section">
+    <p id="para">Meet all your Needs right here</p>
+
+    <div class="buttoncontainer">
+      <div class="flex1">
+        <a class="button1" href="Restaurant_Profile_Create.html">Create Profile</a>
+        <a class="button1" href="Restaurant_profile.html">View Profile</a>
+        <a class="button1" id="update">Update Profile</a>
+      </div>
+
+      <div class="Flex2">
+        <a class="button2" href="Upload_Menu.html" >Update Menu</a>
+        <a class="button2" id="viewComments">View Comments</a>
+        <a class="button2" id="menu">View Menu</a>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+  <div class="form_wrapper" id="form_wrapper">
+    <div class="form_container">
+      <span class="close">&times;</span>
+
+        <div class="title_container">
+            <h2>Update your profile</h2>
+        </div>
+
+        <div class="row clearfix">
+            <div class="">
+
+                <div class="input_field">
+                    <input type="text" name="name" placeholder="Restaurant Name" required id="name">
+                </div>
+
+                <div class="input_field">
+                    <input type="text" name="address" placeholder="Address" required id="address">
+                </div>
+
+                <div class="input_field">
+                    <textarea rows="7" cols="70" name="description" id="description" placeholder="Describe your restaurant"></textarea>
+                </div>
+
+                <div class="input_field">
+                    <input type="text" name="cuisine" placeholder="Cuisine" id="cuisine">
+                </div>
+                
+                <div class="input_field select_option">
+                    <select id="type" required>
+                        <option>Select type</option>
+                        <option>Dine-In</option>
+                        <option>Delivery</option>
+                        <option>Both</option>
+                    </select>
+                </div>
+                
+                <div class="input_field">
+                    <input type="text" name="contactinfo" placeholder="Enter contact number" required id="contactno">
+                </div>
+
+                <div class="input_field">
+                    <input type="url" name="website" placeholder="Website link" required id="website"> 
+                </div>
+
+            </div>
+            <input class="button" type="button" value="Update Profile" onclick="UpdateRestaurantProfile()">
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer class="footer">                                      <!-- Footer of Page--> 
+      <br>
+      <p>Eat.lk 2021 © All Right Reserved. Designed by Group 3<br>
+      <a href="https://www.w3schools.com/">For More Info</a></p>
+      <br>
+    </footer>                                                    <!--End of Footer-->
+
+
+    <script src="scripts/Restaurant_profile.js"></script>
+</body>
+</html>

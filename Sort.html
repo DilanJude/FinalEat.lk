@@ -1,0 +1,82 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/SortStyle.css" type="text/css">
+    <title>Sort Restaurants</title>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+
+</head>
+<body>
+    <nav>                  <!-- Navigation-->
+        <div class="logo">
+           EAT.LK
+        </div>
+        <input type="checkbox" id="click">
+        <label for="click" class="menu-btn">
+        <i class="fas fa-bars"></i>
+        </label>
+        <ul>
+           <li><a href="Landing_page.html">Home</a></li>
+           <li><a href="Restaurants.html">Restaurants</a></li>
+           <li><a href="Contact_us.html">Contact Us</a></li>
+        </ul>
+     </nav>               <!-- end of navigation -->
+
+
+     <img src="images/sort.png" width="1500" height="1000" alt="logo" class="mainlogo"> <!-- Change this pic to a relevant one -->
+
+     <p id="para">Sort our Restaurants according to your preference</p>
+
+     <div class="buttoncontainer">
+         <div class="flex1">
+            <a class="button1" id="japanese">Japanese</a>
+            <a class="button1" id="chinese">Chinese</a>
+            <a class="button1" id="italian">Italian</a>
+            <a class="button1" id="srilankan">Sri Lankan</a>
+            <a class="button1" id="Western">Western</a>
+         </div>
+         <div class="flex2">
+            <a class="button1" id="dinein">Dine In</a>
+            <a class="button1" id="delivery">Delivery</a>
+            <a class="button1" id="both">Both</a>
+         </div>
+     </div>
+
+<!-- modal -->
+     <div id="myModal" class="Modal">
+         <div class="modalcontent">
+             <span class="close">&times;</span>
+             
+             <ul id="S_List">
+
+             </ul>
+         </div>
+     </div>
+<!--end of modal-->
+
+
+
+
+
+
+
+
+    
+
+<!-- #region Footer-->
+
+<footer class="footer">                                      <!-- Footer of Page--> 
+    <br>
+      <p>Eat.lk 2021 © All Right Reserved. Designed by Group 3<br>
+      <a href="https://www.w3schools.com/">For More Info</a></p>
+    <br>
+</footer> 
+<!-- #endregion -->
+
+<script src="scripts/Sort.js"></script>
+</body>
+</html>

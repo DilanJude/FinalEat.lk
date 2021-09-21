@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>                                                 <!-- Start of Head Section -->
+  <title>Home</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="styles/CustomerHomeStyle.css">
+    <meta name="viewport" content="width=device-width, initial-scale=auto">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+     
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+  
+ <!--Favicon-->
+<!--Favicon end-->
+   
+</head>                                                   <!-- End of Head Section -->
+<body onload="loadprofile(); greeting();">
+
+  <nav>
+    <div class="logo">
+       EAT.LK
+    </div>
+    <input type="checkbox" id="click">
+    <label for="click" class="menu-btn">
+    <i class="fas fa-bars"></i>
+    </label>
+    <ul>
+       <li><a href="Landing_page.html">HOME</a></li>
+       <li><a href="Restaurants.html">RESTAURANTS</a></li>
+       <li><a href="Contact_us.html">CONTACT US</a></li>
+    </ul>
+ </nav>
+
+ <div class="greeting">
+  <img src="images/background.png" width="1500" height="1000" alt="logo" id="mainlogo">
+  <div class="caption">
+    <p>Welcome</p>
+    <p id="UserName">Customer</p>
+  </div>
+</div>
+
+
+  <div class="container">
+    <div class="avatar-flip">
+     <img id="usertype" src= "images/neutral.jpg" height="150" width="150"> 
+      <img src="images/logo.png" height="150" width="150">
+    </div>
+    <h2 id="name">Create your Profile</h2>
+    <h3 class="heading">Information</h3>
+  
+    <h4 class="subheading">Email</h4>
+    <h4 class="data" id="email">no data</h6>
+  
+    <h4 class="subheading">Adress</h4>
+    <h4 class="data" id="address">No data</h4>
+  
+    <h4 class="subheading">DOB</h4>
+    <h4 class="data" id="dob">No data</h4>
+  
+    <h4 class="subheading">Gender</h4>
+    <h4 class="data" id="gender">No data</h4>
+  
+    <h4 class="subheading">Number</h4>
+    <h4 class="data" id="number">No data</h4>
+  
+  
+  </div>
+
+  <table class="align">
+  <div class="button">
+    <th><a class="button1" href="Customer_Profile_Create.html">Create Profile</a></th>
+    <th><a class="button2" id="update">Update Profile</a></th>
+  </div>
+  </table>
+
+
+ 
+  <div class="form_wrapper" id="form_wrapper">
+    <div class="form_container">
+      <span class="close">&times;</span>
+
+        <div class="title_container">
+            <h2>Update your Profile</h2>
+        </div>
+        <div class="row clearfix">
+            <div class="">
+
+                <div class="input_field">
+                    <input type="text" name="name" placeholder="Enter your Name" required id="updatename"/>
+                </div>
+
+                <div class="input_field">
+                    <input type="text" name="DOB" placeholder="DOB - dd/mm/yyyy" required id="updateDOB"/>
+                </div>
+
+                <div class="input_field">
+                    <input type="text" name="adress" placeholder="Address" required id="updateaddress"/>
+                </div>
+
+                <div class="input_field">
+                    <input type="text" name="number" placeholder="Mobile Number" required id="updatenumber"/>
+                </div>
+
+                <div class="input_field select_option">
+                    <select id="updategender" required>
+                        <option>Select Gender</option>
+                        <option>Male</option>
+                        <option>Female</oprion>
+                    </select>
+                </div>
+            </div>
+
+            <input class="button" type="button" value="Update" onclick="UpdateProfile()"/>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+    <footer class="footer">                                      <!-- Footer of Page--> 
+      <br>
+      <p>Eat.lk 2021 © All Right Reserved. Designed by Group 3<br>
+      <a href="https://www.w3schools.com/">For More Info</a></p>
+      <br>
+    </footer>                                                    <!--End of Footer-->
+
+
+
+    <script src="scripts/Customer_profile.js"></script>
+</body>
+</html>

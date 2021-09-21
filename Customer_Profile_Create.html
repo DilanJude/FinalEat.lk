@@ -1,0 +1,73 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/CustomerProfileCreateStyle.css" type="text/css">
+    <title>Create Profile</title>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="scripts/Customer_profile.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+  
+</head>
+<body>
+
+
+    <div class="form_wrapper">
+        <div class="form_container">
+
+            <div class="title_container">
+                <h2>Create your Profile!</h2>
+            </div>
+            <div class="row clearfix">
+                <div class="">
+
+                    <div class="input_field">
+                        <input type="text" name="name" placeholder="Enter your Name" required id="name"/>
+                    </div>
+
+                    <div class="input_field">
+                        <input type="email" name="email" placeholder="Enter email used for registration" required id="email"/>
+                    </div>
+
+                    <div class="input_field">
+                        <input type="text" name="DOB" placeholder="DOB - dd/mm/yyyy" required id="DOB"/>
+                    </div>
+
+                    <div class="input_field">
+                        <input type="text" name="adress" placeholder="Address" required id="address"/>
+                    </div>
+
+                    <div class="input_field">
+                        <input type="text" name="number" placeholder="Mobile Number" required id="number"/>
+                    </div>
+
+                    <div class="input_field select_option">
+                        <select id="gender" required>
+                            <option>Select Gender</option>
+                            <option>Male</option>
+                            <option>Female</oprion>
+                        </select>
+                    </div>
+
+                    <div class="input_field select_option">
+                        <select id = "healthy" required>
+                            <option>Would you like to See Healthy food Options</option>
+                            <option>Yes</option>
+                            <option>No</option>
+                        </select>
+                    </div>
+                </div>
+
+                <input class="button" type="button" value="Create" onclick="CreateProfile()"/>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

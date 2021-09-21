@@ -1,0 +1,101 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Home</title>
+  <link rel="stylesheet" href="styles/AdminHomeStyle.css" type="text/css">
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+
+
+  <!-- Navigation-->
+  <nav>                  
+    <div class="logo">
+       EAT.LK
+    </div>
+    <input type="checkbox" id="click">
+    <label for="click" class="menu-btn">
+    <i class="fas fa-bars"></i>
+    </label>
+    <ul>
+       <li><a href="Landing_page.html">HOME</a></li>
+       <li><a href="Restaurants.html">RESTAURANTS</a></li>
+       <li><a href="Contact_us.html">CONTACT US</a></li>
+    </ul>
+ </nav>               
+ <!-- end of navigation -->
+
+  <img src="images/admin.png" width="1500" height="1000" alt="logo" class="mainlogo">
+
+<p id="para">Manage with Ease</p>
+  <div class="buttoncontainer">
+    <div class="flex1">
+      <a class="button1" id="verify">Verify</a>
+      <a class="button1" id="ViewRestaurants">View Restaurants</a>
+    </div>
+
+    <div class="flex2">
+      <a class="button1" id="VeiwCustomers">View Customers</a>
+    </div>
+  </div>
+
+
+
+<!--Modal-->
+
+    <div id="myModal" class="Modal">
+      <div class="modalcontent">
+        <div class="section">
+        <span class="close">&times;</span>
+        </div>
+
+        <ul id="Verify_List">
+          <li>Restaurant</li>
+        </ul>
+        
+      </div>
+    </div>
+<!--End of modal-->
+
+
+<!-- modal 2 -->
+<div id="MyModal2" class="Modal">
+  <div class="modalcontent">
+    <div class="section">
+      <span class="close2">&times;</span>
+    </div>
+
+    <ul id="Customer_List">
+
+    </ul>
+  </div>
+</div>
+<!--End of modal2-->
+
+
+
+<!--Modal3-->
+<div id="MyModal3" class="Modal">
+  <div class="modalcontent">
+    <div class="section">
+      <span class="close3">&times;</span>
+    </div>
+
+    <ul id="Restaurant_List">
+      
+    </ul>
+  </div>
+</div>
+
+<script src="scripts/Admin.js"></script>
+</body>
+</html>

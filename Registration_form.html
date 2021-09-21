@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang = en>
+<head>
+    <title>Registration</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles/RegistrationStyle.css" type="text/css">
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="scripts/Registration.js"></script>
+</head>
+
+
+<body>
+
+    <div class="form_wrapper">
+        <div class="form_container">
+
+          <div class="title_container">
+            <h2>Hello! Please let us know who you are.</h2>
+          </div>
+          <div class="row clearfix">
+            <div class="">
+              
+                <div class="input_field">
+                  <input type="email" name="email" placeholder="Email" required  id="email"/>
+                </div>
+                <div class="input_field">
+                  <input type="password" name="password" placeholder="Password" required id="password"/>
+                </div>
+                <div class="input_field"> 
+                  <input type="password" name="password" placeholder="Re-type Password" required id="repassword"/>
+                </div>
+               
+      
+                
+                    <div class="input_field select_option">
+                      <select id="type" required>
+                        <option>Select type of user</option>
+                        <option>Customer</option>
+                        <option>Restaurant</option>
+                      </select>
+                    </div>
+                
+                      
+                  </div>
+                <input class="button" type="button" value="Register" onclick="register()" />
+              
+            </div>
+          </div>
+
+        </div>
+      </div>
+      
+
+
+</body>

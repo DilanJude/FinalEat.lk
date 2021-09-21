@@ -1,0 +1,74 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/UploadMenuStyle.css" type="text/css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <title>Menu Create</title>
+</head>
+<body>
+    <div class="form_wrapper">
+        <div class="form_container">
+
+            <div class="title_container">
+                <h2>Add items to your menu</h2>
+            </div>
+
+            <div class="row clearfix">
+                <div class="">
+                    <form id="form">
+                        <div class="input_field">
+                            <input type="text" name="restaurantName" placeholder="Restaurant Name" id="restaurantName"/> 
+                        </div>
+
+                        <div class="input_field">
+                            <input type="text" name="foodName" placeholder="Food Name"/>
+                        </div>
+
+                        <div class="input_field">
+                            <input type="text" name="price" placeholder="Price"/>
+                        </div>
+                        
+                        <div class="input_field">
+                            <label for="image">Add image</label>
+                            <input type="file" name="image" placeholder="Add image">
+                        </div>
+
+                        <input class="button" type="submit" value="Submit"/>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let restaurantName = sessionStorage.getItem("currentRestaurant");
+        document.getElementById("restaurantName").value = restaurantName;
+
+
+        document.getElementById("form").addEventListener("submit", function(e){
+            e.preventDefault();
+
+            let formData = new FormData(this);
+
+            $.ajax({
+                type: "POST",
+                url: "http://localhost:8085/api/food/save",
+                processData: false,
+                contentType: false,
+                data: formData,
+                success: function(response){
+                    console.log(response);
+
+                    if(response == 1) alert("success");
+                    else alert("error ;-;");
+                },
+                error: function(error){
+                    console.log(error);
+                }
+            });
+        });
+    </script>
+</body>
+</html>
